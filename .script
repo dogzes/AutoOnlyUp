@@ -1,2 +1,12 @@
-local top = (-697, 7541, -247)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(top)
+while game:IsLoaded() do
+    while true do
+        for i,v in pairs(getconnections(game:service'Players'.LocalPlayer.PlayerGui.MainMenu.PlayButton.MouseButton1Click)) do
+    v.Function()
+    end
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-44, -116, 827)
+    wait(3)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-831, 7964, 82)
+    wait(8)
+    game:GetService("TeleportService"):Teleport(1527587182)
+    end
+end
